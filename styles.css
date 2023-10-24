@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #ffffff; /* Cambia el color de fondo según tu preferencia */
+    color: #000000;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Asegura que el encabezado esté sobre otros elementos */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Utiliza flexbox para centrar elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos a ambos lados del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos del logo */
+.logo img {
+    height: 70px;
+}
+
+/* Estilos de la navegación */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000; /* Color blanco para los enlaces */
+    font-weight: bold;
+}
+
+/* Estilos para resaltar el elemento activo */
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100px !important;
+}
+
+img.btn-whatsapp:hover {
+    border-radius: 100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+    box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+    transition-duration: 1s;
+}
